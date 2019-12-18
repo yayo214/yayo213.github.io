@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Samples.css">
+  <title>Nested if Statements</title>
+</head>
+
+<body>
+  <div id="mainDiv">
+    
+   
+      <script type="text/javascript">
+
+      /* <![CDATA[ */
+
+        var numberStr = prompt("Please type in a number","");
+        var number = parseInt(numberStr);       
+
+        if (isNaN(number))
+
+        {
+          document.write("How about you put a number in there.");
+        }
+
+        else
+        {
+          if ((number < 100)) 
+          {
+            document.write(number + " is less than 100");
+          }
+
+          else if ((number >= 100))
+          {
+            document.write(number + " is greater than or equal to 100");
+          }
+        }
+
+      /* ]]> */
+
+      </script>
+  </div>
+</body>
+
+</html>
