@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+	  <meta charset="UTF-8">
+	  <title>jQuery Loading Assignment</title>
+	  <script src="jquery.js"></script>	
+</head>
+
+<body>
+  <form action="http://www.frodriguez.net/PHPStuff/TestFormDataDelay.php" onsubmit="alert('Hello ' + name.value + '. Loading, Please wait...');" method="get">
+    Enter name: <input type="text" name="name" id="name">
+		  <input type="submit" name="submit" value="Hide Me" id="hideMe">
+    </form>
+        
+        <script>
+            $("#hideMe").click(function(){
+              $(this).hide();
+            });
+        </script> 
+
+		<p>If you click the "Submit" button, the form-data will be sent to \
+		a page called "http://www.frodriguez.net/PHPStuff/TestFormDataDelay.php".</p>
+
+
+		
+</body>
+
+</html>
